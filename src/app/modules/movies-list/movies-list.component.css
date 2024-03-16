@@ -1,0 +1,9 @@
+.app-container {
+    padding: 10px;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

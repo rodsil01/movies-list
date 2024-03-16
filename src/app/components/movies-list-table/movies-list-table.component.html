@@ -1,0 +1,18 @@
+<div class="movies-table-container">
+    <table class="movies-table">
+        <thead class="movies-table__header">
+            <th class="movies-table-header__cell--title">Título</th>
+            <th class="movies-table-header__cell--description">Descripción</th>
+            <th class="movies-table-header__cell--genre">Género</th>
+        </thead>
+        <tbody class="movies-table__body">
+            @for (movie of movies; track $index) {
+                <tr class="movies-table-body__row">
+                    <td class="movies-table-row__cell--title">{{ movie.title }}</td>
+                    <td class="movies-table-row__cell--description">{{ movie.description }}</td>
+                    <td class="movies-table-row__cell--genre">{{ movie.genre }}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

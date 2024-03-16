@@ -1,0 +1,25 @@
+.movies-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.movies-table__header {
+    text-align: left;
+}
+
+.movies-table__header th, .movies-table-body__row td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.movies-table-header__cell--title {
+    width: 15%;
+}
+
+.movies-table-header__cell--description {
+    width: 75%;
+}
+
+.movies-table-header__cell--genre {
+    width: 10%;
+}

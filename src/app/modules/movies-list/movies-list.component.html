@@ -1,0 +1,8 @@
+<main class="app-container">
+    <section>
+        <app-movies-list-filter (onFilterChanged)="onFilterChanged($event)" [genres]="genres"></app-movies-list-filter>
+    </section>
+    <section>
+        <app-movies-list-table [movies]="movies"></app-movies-list-table>
+    </section>
+</main>
