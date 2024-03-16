@@ -10,7 +10,7 @@
         </div>
         <div class="filter-input">
             <label class="filter-input-label" for="genre-filter-input">Género</label>
-            <select class="filter-input__input" [(ngModel)]="genreFilter" name="genre-filter-input" (ngModelChange)="onFilterChangedHandler()">
+            <select class="filter-input__input filter-input__input--select" [(ngModel)]="genreFilter" name="genre-filter-input" (ngModelChange)="onFilterChangedHandler()">
                 @for (genre of genres; track $index) {
                     <option [value]="genre">{{ genre }}</option>
                 }

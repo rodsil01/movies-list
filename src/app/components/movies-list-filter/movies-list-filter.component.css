@@ -64,3 +64,13 @@
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
 }
+
+.filter-input__input--select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('../../../assets/select-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 16px;
+}
