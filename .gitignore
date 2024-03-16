@@ -9,6 +9,7 @@
 .env
 
 # IDE and editor files
+/dist
 /.idea
 /.vscode
 *.suo
