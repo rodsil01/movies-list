@@ -31,4 +31,12 @@ export class MoviesListFilterComponent {
       genre: this.genreFilter
     });
   }
+
+  public onFilterResetHandler(): void {
+    this.onFilterChanged.emit();
+
+    this.nameFilter = undefined;
+    this.descriptionFilter = undefined;
+    this.genreFilter = undefined;
+  }
 }

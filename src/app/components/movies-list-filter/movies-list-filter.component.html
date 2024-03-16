@@ -1,18 +1,25 @@
 <div class="filter-container">
-    <div class="filter-input">
-        <label class="filter-input__label" for="name-filter-input">Nombre</label>
-        <input class="filter-input__input" [(ngModel)]="nameFilter" type="text" name="name-filter-input" (ngModelChange)="onFilterChangedHandler()" />
+    <div class="filter-input-container">
+        <div class="filter-input">
+            <label class="filter-input__label" for="name-filter-input">Nombre</label>
+            <input class="filter-input__input" [(ngModel)]="nameFilter" type="text" name="name-filter-input" (ngModelChange)="onFilterChangedHandler()" />
+        </div>
+        <div class="filter-input">
+            <label class="filter-input__label" for="description-filter-input">Descripción</label>
+            <input class="filter-input__input" [(ngModel)]="descriptionFilter" type="text" name="description-filter-input" (ngModelChange)="onFilterChangedHandler()" />
+        </div>
+        <div class="filter-input">
+            <label class="filter-input-label" for="genre-filter-input">Género</label>
+            <select class="filter-input__input" [(ngModel)]="genreFilter" name="genre-filter-input" (ngModelChange)="onFilterChangedHandler()">
+                @for (genre of genres; track $index) {
+                    <option [value]="genre">{{ genre }}</option>
+                }
+            </select>
+        </div>
     </div>
-    <div class="filter-input">
-        <label class="filter-input__label" for="description-filter-input">Descripción</label>
-        <input class="filter-input__input" [(ngModel)]="descriptionFilter" type="text" name="description-filter-input" (ngModelChange)="onFilterChangedHandler()" />
-    </div>
-    <div class="filter-input">
-        <label class="filter-input-label" for="genre-filter-input">Género</label>
-        <select class="filter-input__input" [(ngModel)]="genreFilter" name="genre-filter-input" (ngModelChange)="onFilterChangedHandler()">
-            @for (genre of genres; track $index) {
-                <option [value]="genre">{{ genre }}</option>
-            }
-        </select>
+    <div class="filter-clear">
+        <button class="filter-clear__button" type="button" (click)="onFilterResetHandler()">
+            Reestablecer Filtros
+        </button>
     </div>
 </div>
