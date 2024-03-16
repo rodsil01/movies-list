@@ -5,6 +5,8 @@
 
 .movies-table__header {
     text-align: left;
+    background-color: #2f2c79;
+    color: white;
 }
 
 .movies-table__header th, .movies-table-body__row td {
