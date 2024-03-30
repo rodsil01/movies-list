@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "rodrigo-silva": {
+    "movies-list": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/rodrigo-silva",
+            "outputPath": "dist/movies-list",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "rodrigo-silva:build:production"
+              "buildTarget": "movies-list:build:production"
             },
             "development": {
-              "buildTarget": "rodrigo-silva:build:development"
+              "buildTarget": "movies-list:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "rodrigo-silva:build"
+            "buildTarget": "movies-list:build"
           }
         },
         "test": {
